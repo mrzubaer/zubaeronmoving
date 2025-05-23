@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zubaer On Moving</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .login-container, .main-container {
+      max-width: 400px;
+      margin: 100px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+    .social-links a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container" id="login">
+    <h2>Login</h2>
+    <input type="text" id="userid" placeholder="User ID">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="main-container hidden" id="main">
+    <h2>Welcome, Zubaer!</h2>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/14GeoYL16KP/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/mr_zubaer?igsh=amN2bXV1N2NxNXY3" target="_blank">Instagram</a>
+      <a href="https://x.com/MohammadZubaerX?t=bOtj0kXcHRSagKA9EH6NWg&s=09" target="_blank">Twitter/X</a>
+      <a href="https://www.linkedin.com/in/mohammad-zubaer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const userId = document.getElementById("userid").value;
+      const password = document.getElementById("password").value;
+      if ((userId === "01907046220" || userId === "user2" || userId === "user3") && password === "Zubaer@123456") {
+        document.getElementById("login").classList.add("hidden");
+        document.getElementById("main").classList.remove("hidden");
+      } else {
+        alert("Invalid credentials");
+      }
+    }
+  </script>
+</body>
+</html>
