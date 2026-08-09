@@ -1,87 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zubaer On Moving</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    .login-container, .main-container {
-      max-width: 400px;
-      margin: 100px auto;
-      background: white;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
-    h2 {
-      text-align: center;
-    }
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      box-sizing: border-box;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .social-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      text-align: center;
-    }
-    .social-links a {
-      color: #007bff;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>খেরোখাতা — ধীরে বাঁচার গল্প</title>
+<meta name="description" content="রোজকার জীবনের ছোট ছোট মুহূর্ত, ঘর গোছানো আর মনের যত্ন নিয়ে একটি লাইফস্টাইল ব্লগ।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container" id="login">
-    <h2>Login</h2>
-    <input type="text" id="userid" placeholder="User ID">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="login()">Login</button>
-  </div>
 
-  <div class="main-container hidden" id="main">
-    <h2>Welcome, Zubaer!</h2>
-    <div class="social-links">
-      <a href="https://www.facebook.com/share/14GeoYL16KP/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/mr_zubaer?igsh=amN2bXV1N2NxNXY3" target="_blank">Instagram</a>
-      <a href="https://x.com/MohammadZubaerX?t=bOtj0kXcHRSagKA9EH6NWg&s=09" target="_blank">Twitter/X</a>
-      <a href="https://www.linkedin.com/in/mohammad-zubaer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">খেরোখাতা<span class="logo-dot">.</span></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="active">হোম</a>
+      <a href="#posts">লেখাগুলো</a>
+      <a href="#about">আমার কথা</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="মেনু খুলুন">☰</button>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <div>
+    <div class="hero-tab">০৯ আগস্ট, ২০২৬ · আজকের মুড: শান্ত</div>
+    <h1 class="hero-title">ধীরে বাঁচার
+      <span class="underline-mark">ছোট ছোট
+        <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M2 10 C 60 2, 120 14, 180 6 S 260 2, 298 8" fill="none" stroke="#B65C63" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+        </svg>
+      </span> গল্প
+    </h1>
+    <p class="hero-sub">এটা কোনো টিপস আর ট্রিকসের তালিকা নয় — বরং রোজকার জীবনের সাধারণ মুহূর্তগুলো নিয়ে লেখা একটা খাতা। সকালের চা, ঘরের কোণ গোছানো, আর নিজের সাথে একটু সময় কাটানোর গল্প।</p>
+    <a href="post.html" class="hero-cta">আজকের লেখা পড়ুন →</a>
+  </div>
+  <div class="hero-art">
+    <svg viewBox="0 0 300 300" aria-hidden="true">
+      <circle cx="150" cy="150" r="148" fill="#E4E7D4"/>
+      <path d="M95 190 Q95 120 150 110 Q205 120 205 190 Z" fill="#F8F6EC" stroke="#2B2A21" stroke-width="3"/>
+      <ellipse cx="150" cy="190" rx="55" ry="10" fill="#DEE2CE"/>
+      <path d="M205 150 Q230 150 228 172 Q226 190 205 186" fill="none" stroke="#2B2A21" stroke-width="3"/>
+      <path d="M120 60 C110 80 130 85 122 105" fill="none" stroke="#6B7A4F" stroke-width="4" stroke-linecap="round"/>
+      <path d="M150 50 C140 72 162 78 152 100" fill="none" stroke="#6B7A4F" stroke-width="4" stroke-linecap="round"/>
+      <path d="M180 62 C172 82 192 88 182 108" fill="none" stroke="#6B7A4F" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="150" cy="107" rx="34" ry="7" fill="#6B7A4F" opacity="0.35"/>
+    </svg>
+  </div>
+</section>
+
+<section class="section" id="posts">
+  <div class="wrap">
+
+    <article class="featured">
+      <div class="featured-media">
+        <svg viewBox="0 0 220 180" aria-hidden="true">
+          <rect x="20" y="30" width="180" height="120" rx="4" fill="#F8F6EC" stroke="#2B2A21" stroke-width="2.5"/>
+          <line x1="20" y1="60" x2="200" y2="60" stroke="#2B2A21" stroke-width="2"/>
+          <rect x="70" y="10" width="80" height="30" rx="2" fill="#EBD9D5" stroke="#2B2A21" stroke-width="2"/>
+          <circle cx="60" cy="100" r="18" fill="#DEE2CE" stroke="#2B2A21" stroke-width="2"/>
+          <path d="M85 95 h95" stroke="#2B2A21" stroke-width="2" stroke-linecap="round"/>
+          <path d="M85 110 h70" stroke="#2B2A21" stroke-width="2" stroke-linecap="round"/>
+          <path d="M85 125 h85" stroke="#2B2A21" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="featured-body">
+        <div class="mood-row">
+          <span class="mood-chip rose">নিজের যত্ন</span>
+          <span class="date-tag">৯ মিনিটের পড়া · ৯ আগস্ট</span>
+        </div>
+        <h3>সকালের প্রথম এক ঘণ্টা কেন সবচেয়ে গুরুত্বপূর্ণ</h3>
+        <p>ফোন হাতে নেওয়ার আগে যদি নিজের জন্য কয়েক মিনিট রাখা যায়, পুরো দিনটা কেমন বদলে যেতে পারে — সেই অভিজ্ঞতা আর ছোট্ট একটা রুটিন নিয়ে আজকের লেখা।</p>
+        <a href="post.html" class="read-more">পুরোটা পড়ুন</a>
+      </div>
+    </article>
+
+    <div class="section-head">
+      <h2>সাম্প্রতিক লেখা</h2>
+      <span class="eyebrow">সব লেখা</span>
+    </div>
+
+    <div class="post-grid">
+
+      <a class="post-card" href="post.html">
+        <div class="post-card-media" style="background:var(--rose-soft)">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M20 70 Q20 40 50 35 Q80 40 80 70 Z" fill="none" stroke="#B65C63" stroke-width="3"/>
+            <path d="M80 55 Q95 55 93 68 Q91 78 80 76" fill="none" stroke="#B65C63" stroke-width="3"/>
+            <line x1="30" y1="80" x2="70" y2="80" stroke="#B65C63" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>এক কাপ চায়ে যেভাবে দিন শুরু করি</h3>
+        <p>তাড়াহুড়োর মধ্যেও যদি একটা ছোট আচার রাখা যায়, সেটাই দিনের প্রথম প্রশান্তি হয়ে ওঠে।</p>
+        <div class="post-card-meta"><span>৫ মিনিট</span><span>৭ আগস্ট</span></div>
+      </a>
+
+      <a class="post-card" href="post.html">
+        <div class="post-card-media" style="background:var(--olive-soft)">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <rect x="25" y="20" width="50" height="65" rx="3" fill="none" stroke="#6B7A4F" stroke-width="3"/>
+            <line x1="35" y1="35" x2="65" y2="35" stroke="#6B7A4F" stroke-width="3"/>
+            <line x1="35" y1="48" x2="65" y2="48" stroke="#6B7A4F" stroke-width="3"/>
+            <line x1="35" y1="61" x2="55" y2="61" stroke="#6B7A4F" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>ঘরের এক কোণ যেভাবে গুছিয়ে রাখি</h3>
+        <p>পুরো বাড়ি একদিনে গোছানো লাগে না — একটা কোণ ঠিক থাকলেই মনটা শান্ত থাকে।</p>
+        <div class="post-card-meta"><span>৬ মিনিট</span><span>৫ আগস্ট</span></div>
+      </a>
+
+      <a class="post-card" href="post.html">
+        <div class="post-card-media" style="background:var(--brass-soft)">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M25 30 h50 v45 a25 25 0 0 1 -50 0 Z" fill="none" stroke="#A9793A" stroke-width="3"/>
+            <line x1="30" y1="45" x2="70" y2="45" stroke="#A9793A" stroke-width="2"/>
+            <line x1="32" y1="58" x2="68" y2="58" stroke="#A9793A" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>বই পড়ার অভ্যাস আবার ফিরিয়ে আনার গল্প</h3>
+        <p>দিনে দশ পাতা — এই ছোট্ট নিয়মটাই আমার পড়ার অভ্যাস আবার গড়ে দিয়েছে।</p>
+        <div class="post-card-meta"><span>৭ মিনিট</span><span>২ আগস্ট</span></div>
+      </a>
+
+      <a class="post-card" href="post.html">
+        <div class="post-card-media" style="background:var(--rose-soft)">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="45" r="22" fill="none" stroke="#B65C63" stroke-width="3"/>
+            <line x1="50" y1="67" x2="50" y2="85" stroke="#B65C63" stroke-width="3"/>
+            <line x1="38" y1="85" x2="62" y2="85" stroke="#B65C63" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>রান্নাঘরের ছোট্ট আনন্দগুলো</h3>
+        <p>নতুন কিছু রাঁধার তাড়া নেই — পুরনো রেসিপিতেই যে শান্তি লুকিয়ে থাকে, সেটাই খুঁজি।</p>
+        <div class="post-card-meta"><span>৪ মিনিট</span><span>৩০ জুলাই</span></div>
+      </a>
+
+      <a class="post-card" href="post.html">
+        <div class="post-card-media" style="background:var(--olive-soft)">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M20 75 Q50 20 80 75 Z" fill="none" stroke="#6B7A4F" stroke-width="3"/>
+            <line x1="50" y1="75" x2="50" y2="55" stroke="#6B7A4F" stroke-width="3"/>
+          </svg>
+        </div>
+        <h3>না বলাটা যখন নিজের যত্নের অংশ</h3>
+        <p>সব আমন্ত্রণে হ্যাঁ বলা মানেই ভালো থাকা নয় — এই উপলব্ধি হতে আমার অনেক সময় লেগেছে।</p>
+        <div class="post-card-meta"><span>৮ মিনিট</span><span>২৭ জুলাই</span></div>
+      </a>
+
+      <a class="post-card" href="post.html">
+        <div class="post-card-media" style="background:var(--brass-soft)">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M30 30 h40 v15 h10 l-30 35 l-30 -35 h10 Z" fill="none" stroke="#A9793A" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>সপ্তাহান্তে ফোন কম ধরার একটা চেষ্টা</h3>
+        <p>দুই ঘণ্টা স্ক্রিন ছাড়া কাটানোর ছোট্ট পরীক্ষাটা যা শিখিয়ে দিল।</p>
+        <div class="post-card-meta"><span>৬ মিনিট</span><span>২৪ জুলাই</span></div>
+      </a>
+
     </div>
   </div>
+</section>
 
-  <script>
-    function login() {
-      const userId = document.getElementById("userid").value;
-      const password = document.getElementById("password").value;
-      if ((userId === "01907046220" || userId === "user2" || userId === "user3") && password === "Zubaer@123456") {
-        document.getElementById("login").classList.add("hidden");
-        document.getElementById("main").classList.remove("hidden");
-      } else {
-        alert("Invalid credentials");
-      }
-    }
-  </script>
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-avatar">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="38" r="18" fill="none" stroke="#B65C63" stroke-width="3"/>
+          <path d="M20 90 Q20 60 50 60 Q80 60 80 90" fill="none" stroke="#B65C63" stroke-width="3"/>
+        </svg>
+      </div>
+      <div>
+        <span class="eyebrow" style="color:#C9C7B8">আমার কথা</span>
+        <h2>একজন সাধারণ মানুষের দিনলিপি</h2>
+        <p>আমি বড় বড় জীবনদর্শনের কথা বলি না — শুধু রোজকার ছোট ছোট মুহূর্তগুলো লিখে রাখি, যেগুলো একটু একটু করে জীবনটাকে সহজ করে তোলে। এই খেরোখাতা তারই একটা জায়গা।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-quote">"ধীরে চলাটাও একধরনের সাহস।"</p>
+    <div class="footer-links">
+      <a href="#about">আমার কথা</a>
+      <a href="#posts">লেখাগুলো</a>
+      <a href="mailto:hello@example.com">যোগাযোগ</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
